@@ -8,6 +8,33 @@
   </head>
   <body>
     <div id="thankyou"><b>Thank you for being my valentine 😌🥰</b></div>
+       <div id="thankyou">
+      <b>
+          <a id="countdown" href="https://drive.google.com/file/d/1pNatwqdRuP0p0C5kwvpn96FNoJoT8cG5/view?usp=drivesdk" style="text-decoration: none; color: #ff9494;">CLICK HERE IN 10 SECONDS</a>
+      </b>
+  
+      <script>
+          let timeLeft = 10; 
+          const countdownElement = document.getElementById("countdown");
+  
+          function updateCountdown() {
+              if (timeLeft > 1) {
+                  countdownElement.textContent = `CLICK HERE IN ${timeLeft} SECONDS`;
+              } else if (timeLeft === 1) {
+                  countdownElement.textContent = `CLICK HERE IN ${timeLeft} SECOND`;
+              } else {
+                  countdownElement.textContent = "CLICK NOW";
+              }
+              timeLeft--;
+  
+              if (timeLeft >= 0) {
+                  setTimeout(updateCountdown, 1000);
+              }
+          }
+  
+          updateCountdown();
+      </script>
+  </div>
     <div class="flower">
       <div class="f-wrapper">
         <div class="flower__line"></div>
@@ -58,33 +85,7 @@
       </div>
       <div class="flower__glass"></div>
     </div>
-    <div id="thankyou">
-      <b>
-          <a id="countdown" href="https://drive.google.com/file/d/1pNatwqdRuP0p0C5kwvpn96FNoJoT8cG5/view?usp=drivesdk" style="text-decoration: none; color: #ff9494;">CLICK HERE IN 10 SECONDS</a>
-      </b>
-  
-      <script>
-          let timeLeft = 10; 
-          const countdownElement = document.getElementById("countdown");
-  
-          function updateCountdown() {
-              if (timeLeft > 1) {
-                  countdownElement.textContent = `CLICK HERE IN ${timeLeft} SECONDS`;
-              } else if (timeLeft === 1) {
-                  countdownElement.textContent = `CLICK HERE IN ${timeLeft} SECOND`;
-              } else {
-                  countdownElement.textContent = "CLICK NOW";
-              }
-              timeLeft--;
-  
-              if (timeLeft >= 0) {
-                  setTimeout(updateCountdown, 1000);
-              }
-          }
-  
-          updateCountdown();
-      </script>
-  </div>
+ 
   
 
   </body>
